@@ -815,9 +815,9 @@ class MapDetector:
                 y += scale_size(15)
                 texts.append(((x, y), get_event_text(pattern), FONT_SIZE_SMALL, (255, 200, 200, 255), OUTLINE_W_SMALL, OUTLINE_COLOR))
             # 血瓶
-            if match(51, 41):
+            if match(510, 41):
                 y += scale_size(15)
-                texts.append(((x, y), process_underground_name("血瓶"), FONT_SIZE_SMALL, (200, 255, 255, 255), OUTLINE_W_SMALL, OUTLINE_COLOR))
+                texts.append(((x, y), process_underground_name("血瓶"), FONT_SIZE_SMALL, (255, 255, 0, 255), OUTLINE_W_SMALL, OUTLINE_COLOR))
             # 神授塔BOSS
             if construct.pos_index in TGH_FLOOR_BOSS_POS_INDEX:
                 floor_pos, floor_num = TGH_FLOOR_BOSS_POS_INDEX[construct.pos_index]
